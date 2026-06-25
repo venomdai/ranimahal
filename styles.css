@@ -759,3 +759,38 @@ a {
     padding: 2rem 0;
   }
 }
+
+/* Founder Section */
+.founder {
+  background: var(--surface);
+}
+
+.founder-grid {
+  align-items: center;
+}
+
+.founder-image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.founder-image {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: var(--shadow);
+  border: 4px solid var(--primary);
+}
+
+@media (max-width: 840px) {
+  .founder-image {
+    width: 220px;
+    height: 220px;
+  }
+
+  .founder-grid {
+    grid-template-columns: 1fr;
+  }
+}
